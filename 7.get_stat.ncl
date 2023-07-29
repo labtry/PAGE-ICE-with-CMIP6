@@ -1,0 +1,48 @@
+; Below is an NCL script example for processing CMIP6 data.
+; This code calculates the mean and variance of temperature changes.
+
+begin 
+    f1 = addfile ("F:/Ensemble/SSP119_ensemble.nc", "r")
+    f2 = addfile ("F:/Ensemble/SSP126_ensemble.nc", "r")
+    f3 = addfile ("F:/Ensemble/SSP245_ensemble.nc", "r")
+    f4 = addfile ("F:/Ensemble/SSP370_ensemble.nc", "r")
+    f5 = addfile ("F:/Ensemble/SSP434_ensemble.nc", "r")
+    f6 = addfile ("F:/Ensemble/SSP460_ensemble.nc", "r")
+    f7 = addfile ("F:/Ensemble/SSP534-over_ensemble.nc", "r")
+    f8 = addfile ("F:/Ensemble/SSP585_ensemble.nc", "r")
+    f9 = addfile ("F:/Ensemble/G6solar_ensemble.nc", "r")
+    f10 = addfile ("F:/Ensemble/G6sulfur_ensemble.nc", "r")
+    
+    fout1 = addfile ("F:/Stat/SSP119_Stat.nc", "c")
+    fout2 = addfile ("F:/Stat/SSP126_Stat.nc", "c")
+    fout3 = addfile ("F:/Stat/SSP245_Stat.nc", "c")
+    fout4 = addfile ("F:/Stat/SSP370_Stat.nc", "c")
+    fout5 = addfile ("F:/Stat/SSP434_Stat.nc", "c")
+    fout6 = addfile ("F:/Stat/SSP460_Stat.nc", "c")
+    fout7 = addfile ("F:/Stat/SSP534-over_Stat.nc", "c")
+    fout8 = addfile ("F:/Stat/SSP585_Stat.nc", "c")
+    fout9 = addfile ("F:/Stat/G6solar_Stat.nc", "c")
+    fout10 = addfile ("F:/Stat/G6sulfur_Stat.nc", "c")
+    
+    fout1->mean=dim_avg_n(f1->Stat,0)
+    fout2->mean=dim_avg_n(f2->Stat,0)
+    fout3->mean=dim_avg_n(f3->Stat,0)
+    fout4->mean=dim_avg_n(f4->Stat,0)
+    fout5->mean=dim_avg_n(f5->Stat,0)
+    fout6->mean=dim_avg_n(f6->Stat,0)
+    fout7->mean=dim_avg_n(f7->Stat,0)
+    fout8->mean=dim_avg_n(f8->Stat,0)
+    fout9->mean=dim_avg_n(f9->Stat,0)
+    fout10->mean=dim_avg_n(f10->Stat,0)
+    
+    fout1->std=dim_stddev_n(f1->Stat,0)
+    fout2->std=dim_stddev_n(f2->Stat,0)
+    fout3->std=dim_stddev_n(f3->Stat,0)
+    fout4->std=dim_stddev_n(f4->Stat,0)
+    fout5->std=dim_stddev_n(f5->Stat,0)
+    fout6->std=dim_stddev_n(f6->Stat,0)
+    fout7->std=dim_stddev_n(f7->Stat,0)
+    fout8->std=dim_stddev_n(f8->Stat,0)
+    fout9->std=dim_stddev_n(f9->Stat,0)
+    fout10->std=dim_stddev_n(f10->Stat,0)
+end
