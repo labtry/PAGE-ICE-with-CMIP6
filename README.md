@@ -20,7 +20,7 @@ If you find this work helpful, please consider citing the paper:
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Usage
- Scripts for plotting and data processing are available.
+ Scripts for plotting and data processing are available. The PAGE-ICE IAM requires the use of @RISK software. For detailed instructions, please refer to the referenced literature.
 
 ## Acknowledgments
 Thank any individuals or organizations that contributed to the research and paper.
