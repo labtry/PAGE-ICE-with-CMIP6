@@ -1,4 +1,4 @@
-# Solar geoengineering and carbon removal for significant reduction of climate damages
+# Solar geoengineering and carbon removal significantly lower climate damages
 # Economic Impacts of Climate Change and Geoengineering with CMIP6 Model Projections
 
 ![License](https://img.shields.io/badge/License-MIT-green)
