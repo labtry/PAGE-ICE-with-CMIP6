@@ -14,7 +14,8 @@ Quantification of economic impacts of climate change informs policy decisions an
 
 ## Citation
 If you find this work helpful, please consider citing the paper:
-[Link waiting to be generated]
+Solar geoengineering and carbon removal significantly lower economic climate damages
+https://doi.org/10.1016/j.oneear.2023.09.004
 
 ## License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
